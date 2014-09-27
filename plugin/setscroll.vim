@@ -49,7 +49,7 @@ endfunction
 augroup setscroll
     autocmd! setscroll
 
-    autocmd! BufEnter,VimResized * call s:SetlocalScroll()
+    autocmd! WinEnter,VimResized * call s:SetlocalScroll()
 augroup END
 
 " post-processings {{{1
