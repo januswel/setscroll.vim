@@ -1,0 +1,4 @@
+setscroll
+=========
+
+Setlocals 'scroll' automatically
