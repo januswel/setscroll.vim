@@ -1,0 +1,61 @@
+*setscroll.txt*	Plugin to setlocal 'scroll' automatically
+                                                Last change: 2014 Sep 27.
+
+SYNOPSIS						*setscroll-synopsis*
+>
+	" write below settings in your .vimrc to setlocal scroll=5
+	let g:scroll_height = 5
+
+DESCRIPTION					*setscroll-description*
+
+Plugin to setlocal 'scroll' automatically.
+
+When you specify a value larger than the window height, this will execute
+below commands.
+>
+	setlocal scroll=0
+
+DEPENDENCIES					*setscroll-dependencies*
+
+This plugin has no dependencies.
+
+PROVIDES						*setscroll-provides*
+
+Augroups:
+setscroll
+	All of the autocmds provided by this plugin is located in "setscroll".
+	To disable in a certain instance of VIM, hit the following command: >
+
+		:autocmd! setscroll
+
+SETTINGS						*setscroll-settings*
+
+DEFAULT
+
+The 'scroll' will be set to 3.
+
+Variables:
+g:scroll_height
+	the value that you wanna setlocal 'scroll'.  This variable must be
+	|Number|.
+
+DISABLES						*setscroll-disables*
+
+Variables:
+g:loaded_setscroll
+	When exists, does nothing.  Use to disable this plugin.
+
+
+==============================================================================
+
+Author
+	janus_wel <janus.wel.3@gmail.com>
+Copyright
+	(c) 2014 by janus_wel
+License
+	This material may be distributed only subject to the terms and
+	conditions set forth in the Open Publication License, v1.0 or later
+	(the latest version is presently available at
+	http://www.opencontent.org/openpub/).
+
+vim:tw=78:ts=8:noet:ft=help:norl:
